@@ -1,23 +1,8 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "backend/server.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "ui/**",
-      "use": "@vercel/static"
-    }
+  "rewrites": [
+    { "source": "/pizzas", "destination": "/api/pizzas" }
   ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "backend/server.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/ui/$1"
-    }
+  "redirects": [
+    { "source": "/", "destination": "/ui/index.html", "permanent": false }
   ]
 }
