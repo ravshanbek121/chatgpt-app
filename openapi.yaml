@@ -1,0 +1,18 @@
+openapi: 3.0.1
+info:
+  title: My ChatGPT App API
+  version: 1.0.0
+paths:
+  /ping:
+    get:
+      summary: Simple health check
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
