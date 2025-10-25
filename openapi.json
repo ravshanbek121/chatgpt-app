@@ -1,0 +1,41 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Togger API",
+    "version": "1.0.0",
+    "description": "Returns a list of pizzas 🍕"
+  },
+  "paths": {
+    "/pizzas": {
+      "get": {
+        "summary": "Get a list of pizzas",
+        "operationId": "getPizzas",
+        "responses": {
+          "200": {
+            "description": "List of pizzas",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "pizzas": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": { "type": "string" },
+                          "ingredients": { "type": "string" },
+                          "price": { "type": "string" }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

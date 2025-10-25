@@ -1,0 +1,21 @@
+body {
+  font-family: system-ui, sans-serif;
+  padding: 20px;
+  background: #fffaf6;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.pizza {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #eee;
+}
+
+strong {
+  color: #d64b00;
+}

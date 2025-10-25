@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Togger Pizza Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>🍕 Togger Pizza List</h2>
+    <div id="list"></div>
+
+    <script>
+      fetch("/pizzas")
+        .then((r) => r.json())
+        .then((data) => {
+          const list = document.getElementById("list");
+          data.pizzas.forEach((p) => {
+            const div = document.createElement("div");
+            div.className = "pizza";
+            div.innerHTML = `
+              <strong>${p.name}</strong><br>
+              <em>${p.ingredients}</em><br>
+              <span>${p.price}</span>
+            `;
+            list.appendChild(div);
+          });
+        });
+    </script>
+  </body>
+</html>

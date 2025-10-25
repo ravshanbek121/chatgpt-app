@@ -1,0 +1,20 @@
+{
+  "name": "Togger",
+  "description": "A simple ChatGPT app that lists pizzas 🍕.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Your Name",
+    "url": "https://yourdomain.com"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://your-deployed-domain.com/openapi.json"
+  },
+  "permissions": [],
+  "ui": {
+    "card": {
+      "title": "🍕 Togger Pizza List",
+      "display": "list"
+    }
+  }
+}

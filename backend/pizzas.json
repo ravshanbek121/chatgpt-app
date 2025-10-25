@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Margherita",
+    "ingredients": "Tomato, mozzarella, basil",
+    "price": "$10"
+  },
+  {
+    "name": "Pepperoni",
+    "ingredients": "Tomato, mozzarella, pepperoni",
+    "price": "$12"
+  },
+  {
+    "name": "Hawaiian",
+    "ingredients": "Ham, pineapple, mozzarella",
+    "price": "$11"
+  },
+  {
+    "name": "Veggie",
+    "ingredients": "Peppers, onions, mushrooms, olives",
+    "price": "$9"
+  }
+]
