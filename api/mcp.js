@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import { Server } from "@modelcontextprotocol/server-filesystem";
 import fs from "fs";
 import path from "path";
