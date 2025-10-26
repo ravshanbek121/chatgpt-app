@@ -1,6 +1,7 @@
 {
   "rewrites": [
-    { "source": "/pizzas", "destination": "/api/pizzas" }
+    { "source": "/pizzas", "destination": "/api/pizzas" },
+    { "source": "/mcp", "destination": "/api/mcp" }
   ],
   "redirects": [
     { "source": "/", "destination": "/ui/index.html", "permanent": false }
